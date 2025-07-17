@@ -7,5 +7,5 @@ export default function handler(req, res) {
   // 阻止代理缓存敏感响应
   res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
 
-  res.status(200).send("alert(/poc/);");
+  res.status(200).send("alert(/xss_poc/);");
 }
